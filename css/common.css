@@ -1,0 +1,129 @@
+/*
+	content:base部分
+*/
+body,
+div,
+address,
+blockquote,
+iframe,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+table,
+caption,
+th,
+td,
+form,
+legend,
+fieldset,
+input,
+button,
+select,
+textarea,
+em,
+i
+{
+    font-size: 12px;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+    font-weight: normal;
+    font-style: normal;
+
+    margin: 0;
+    padding: 0;
+}
+ol,
+ul,
+li
+{
+    list-style: none;
+}
+img
+{
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: middle;
+
+    border: 0;
+}
+a
+{
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #0362a7;
+}
+.clear
+{
+    line-height: 0;
+
+    clear: both;
+
+    height: 0;
+}
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+div,
+span,
+a
+{
+    word-wrap: break-word;
+    word-break: normal;
+    word-break: break-all;
+}
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+textarea[readonly]
+{
+    cursor: not-allowed;
+    background: #eee;
+}
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'aliyun-console-font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: #06C;
+    cursor: pointer;
+}
+.clearfix::after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0
+}

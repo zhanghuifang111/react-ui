@@ -1,0 +1,383 @@
+/*日期选择器*/
+.datePicker{
+	position: relative;
+/*	width: 160px;*/
+	display: inline-block;
+}
+.date-input
+{
+    line-height: 35px;
+
+    /*width: 160px;*/
+    min-width: 160px;
+    height: 35px;
+
+    cursor: pointer;
+	position: relative;
+    border: 1px solid #ddd;
+    padding:0 38px 0 12px;
+}
+.date-input.none{
+    background-color: #eee;
+    cursor: not-allowed;
+}
+.date-input span{
+    font-size: 14px;
+    display: inline-block;
+    margin-top: -1px;
+}
+.date-input span:nth-child(2){
+	
+	margin-left: 10px;
+}
+.date-input i
+{
+    font-size: 16px;
+
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px; 
+    /*margin-left: 10px;*/
+
+}
+.date-picker
+{
+    width: 280px;
+    padding: 10px;
+
+    background-color: #beefff;
+    box-shadow: 0 0 4px #bbb;
+    position: absolute;
+    top: 36px;
+    display: none;
+    z-index:1000;
+}
+.date-picker .condition-head
+{
+    position:relative;
+    font-size: 16px;
+    text-align:center;
+    width: 100%;
+}
+.date-picker .condition-head i
+{
+    position:absolute;
+    top:3px;
+    cursor: pointer;
+
+    color: #09c;
+}
+.date-picker .condition-head i:nth-of-type(1){
+left:0;
+}
+.date-picker .condition-head i:nth-of-type(2){
+right:0;
+}
+.date-picker .condition-head span
+{
+    display: inline-block;
+
+    padding: 0 6px;
+
+    cursor: pointer;
+
+    color: #585858;
+    margin:0 16px;
+}
+.date-picker .condition-head span:nth-child(2)
+{
+    /* margin-right: 18px;
+    margin-left: 45px; */
+}
+.date-picker .condition-head span:nth-child(3)
+{
+    /* margin-right: 45px;
+    margin-left: 18px */;
+}
+.date-picker .condition-head span:hover
+{
+    background-color: #f0ffff;
+}
+.date-picker .day-container
+{
+    margin-top: 14px;
+
+    text-align: center;
+}
+.date-picker .day-container tr
+{
+    line-height: 34px;
+
+    height: 34px;
+}
+.date-picker .day-container th
+{
+    width: 35px;
+}
+.date-picker .day-container td
+{
+    cursor: pointer;
+    transition: .2s;
+}
+.date-picker .day-container td:hover
+{
+    border-radius: 17px;
+    background-color: #f0ffff;
+}
+.date-picker .day-container td.active{
+	border-radius: 17px;
+    background-color: #f0ffff;
+}
+.prev-day,
+.next-day
+{
+    color: #999;
+}
+.date-picker .month-container
+{
+    margin-top: 14px;
+
+    text-align: center;
+    height: 182px;
+}
+.date-picker .month-container button {
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 5px 12px;
+    /*border: 1px dashed #6F9DE2;*/
+    border:none;
+    background: none;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 0 4px #83A3DE;
+    outline:none;
+}
+.date-picker .month-container button:hover{
+	background-color: 
+	#FFFAFA;
+	/*box-shadow: 0 0 8px #83A3DE;*/
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+.date-picker .year-container
+{
+    margin-top: 14px;
+
+    text-align: center;
+    height: 182px;
+}
+.date-picker .year-container button {
+    display: inline-block;
+    width: 40px;
+    height: 26px;
+    margin: 5px 6px;
+    /*border: 1px dashed #6F9DE2;*/
+    border:none;
+    background: none;
+    cursor: pointer;
+    /*transition: .2s;*/
+    box-shadow: 0 0 4px #83A3DE;
+    outline:none;
+}
+.date-picker .year-container button:hover{
+	background-color: 
+	#FFFAFA;
+	/*box-shadow: 0 0 8px #83A3DE;*/
+	-webkit-transform: scale(1.5);
+	        transform: scale(1.5);
+}
+
+.date-picker .condition-head span.month-text{
+	width: 48px;
+    text-align: center;
+    padding: 0;
+}
+
+.clock-container button{
+    outline: none;
+}
+.clock{
+    height: 202px;
+}
+.clock-whole{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 280px;
+    height: 276px;
+    padding-top: 30px;
+    box-shadow: 0px 0px 10px #006B8E;
+}
+.clock .fa-times-circle-o{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #0099CC;
+    cursor: pointer;
+}
+.clock-inner {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 6px solid #0099CC;
+    border-radius: 100px;
+    position: relative;
+}
+.clock-dial{
+    width: 148px;
+    height: 148px;
+    position: relative;
+   /* margin:4.5px;*/
+   padding: 5px;
+   box-sizing: initial;
+}
+.clock-item{
+    position: absolute;
+    font-size: 16px;
+    color: #757575;
+    border:none;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 15px;
+
+}
+.clock-item:hover{
+     background-color: #F8F8FF;
+}
+.clock-item-whole:hover{
+    background-color: #0099CC;
+    color: #fff;
+}
+.clock-inner .active{
+    background-color: #4682B4;
+}
+.hour-hand{
+    width: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    background-color: #000;
+    margin-top: -55px;
+    transform-origin: 50% 82%;
+    transform: rotateZ(0deg);
+    height: 68px; 
+}
+.minute-hand{
+    width: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #000;
+    margin-top: -66px;
+    transform-origin: 50% 82%;
+    transform: rotateZ(0deg);
+    height: 82px; 
+}
+.second-hand{
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -1px;
+    background-color: #000;
+    margin-top: -78px;
+    transform-origin: 50% 82%;
+    transform: rotateZ(0deg);
+    height: 96px; 
+}
+.clock-option{
+    overflow:hidden;
+    margin-top: -22px;
+    padding: 0 10px;
+    display: none;
+}
+.clock-option.show{
+    display: block;
+}
+.clock-option button{
+    border:2px solid transparent;
+    width: 36px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    box-sizing: initial;
+}
+.time-am{
+    float: left;
+    border-color: #0099CC;
+    background-color: #70DCFF;
+}
+.time-pm{
+    float: right;
+    border-color: #0099CC;
+    background-color: #70DCFF;
+    
+}
+.clock-option .active{
+    border-color: #70DCFF;
+    background-color: #0099CC;
+}
+.clock-time{
+    padding: 25px 10px 0px 10px;
+}
+.clock-time-whole{
+    padding-top: 16px;
+    border-top:1px dashed #000;
+}
+.clock-time-input {
+    display: inline-block;
+    height: 24px;
+    width: 52px;
+    position: relative;
+    margin: 0 14px;
+    cursor: pointer;
+}
+.clock-time-input span {
+    display: block;
+    width: 38px;
+    height: 100%;
+    background-color: #F0FFFF;
+    line-height: 24px;
+    text-align: center;
+}
+.clock-time-input i{
+    width: 13px;
+    text-align: center;
+    cursor: pointer;
+}
+.clock-time-input .fa-angle-up {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.clock-time-input .fa-angle-down {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.clock-time-input i:hover{
+    background-color: #0099CC;
+    color: #fff;
+}
+.fuzzy *{
+    color: rgba(0, 0, 0, 0);
+    text-shadow: #000 0 0 8px; 
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

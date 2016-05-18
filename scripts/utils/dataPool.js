@@ -1,0 +1,61 @@
+/*
+数据池：有关pmact的所有数据接口
+*/
+var dataPool = {
+	//账户管理
+	account:{
+		
+	},
+	//企业用户
+	enterpriseUser:{
+		list:'http://192.168.200.92:8080/pmact_pmrest/enterprise/WebEnterpriseUser/WebEnterpriseUser_listtable.sv',
+		save:"",
+		delete:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebEnterpriseUser/WebEnterpriseUser_del.sv",
+		checkUserPhone:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebEnterpriseUser/reg_check_username.sv?id="
+	},
+	//设备管理
+	equipment:{
+		list:"http://192.168.200.92:8080/pmact_pmrest/satation/weatherStationInfo/weatherStationInfo_listtable_admin.sv",
+		save:"http://192.168.200.92:8080/pmact_pmrest/satation/weatherStationInfo/weatherStationInfo_save_admin.sv",
+		delete:""
+	},
+	//菜单管理
+	menu:{
+		list:"http://192.168.200.92:8080/pmact_pmrest/webapp/ent_app_pc_list.sv",
+		save:"http://192.168.200.92:8080/pmact_pmrest/webapp/ent_app_pc_save.sv",
+		delete:"http://192.168.200.92:8080/pmact_pmrest/webapp/ent_app_pc_remove.sv"
+	},
+	//菜单类型
+	menuType:{
+		list:"http://192.168.200.92:8080/pmact_pmrest/webapp/appTypePc_list.sv",
+		save:"http://192.168.200.92:8080/pmact_pmrest/webapp/appTypePc_save.sv",
+		delete:"http://192.168.200.92:8080/pmact_pmrest/webapp/appTypePc_del.sv",
+		menuList:'http://192.168.200.92:8080/pmact_pmrest/webapp/appTypePc_app_list.sv',
+		menuOwnList:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_own_list.sv"
+	},
+	//组织机构
+	organization:{
+		findNodes:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebDepartment/findNodes.sv",
+		save:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebDepartment/WebDepartment_save.sv",
+		delete:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebDepartment/WebDepartment_del.sv",
+		userList:"http://192.168.200.92:8080/pmact_pmrest/enterprise/WebEnterpriseUser/user_dept_list.sv",
+		userOwnList:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_user_own_list.sv"
+	},
+	//角色管理
+	role:{
+		list:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_list.sv",
+		save:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_save.sv",
+		delete:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_remove.sv",
+		saveUser:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_user_save.sv",
+		saveMenu:"http://192.168.200.92:8080/pmact_pmrest/webapp/role_pc_app_save.sv"
+	},
+	//驾驶舱
+	cockpit:{
+
+	},
+	companyId:sessionStorage.companyid,
+	interceptor:['register','promotion'],
+	modalContainer:null
+};
+
+module.exports = dataPool;

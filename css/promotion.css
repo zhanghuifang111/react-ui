@@ -1,0 +1,235 @@
+ html,body,.indexpage{
+	height: 100%;
+} 
+.promotion
+{
+    width: 100%;
+    min-height: 100%; 
+
+    background: -webkit-radial-gradient(50% 50%, ellipse, #4988bb 5%, #3573b0 51%, #205eab 100%);
+    background: -moz-radial-gradient(50% 50%, ellipse, #4988bb 5%, #3573b0 51%, #205eab 100%);
+    background: -ms-radial-gradient(50% 50%, ellipse, #4988bb 5%, #3573b0 51%, #205eab 100%);
+    font-size: 10px;
+    padding: 5px 15px;
+    color: #fff;
+}
+.promotion #content{
+		height: 200px;
+	}
+.promotion-title{
+	font-size: 2em;
+	margin-left: 4%;
+	position: relative;
+}
+.promotion-container{
+	display: box;
+	display: -webkit-box;
+	box-orient:vertical;
+	-webkit-box-orient:vertical;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction:column;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+	
+	position: relative;
+}
+
+.promotion-summary,.promotion-chart{
+	border:1px solid #5894ca;
+	border-radius: 5px;
+	width: 100%;
+}
+.promotion-summary{
+	padding: 0.8em 0 0.5em 0;
+	display: box;
+	display: -webkit-box;
+	box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	
+}
+.promotion-chart{
+	margin-top: 2em;
+	/* height: 500px; */
+	    padding-bottom: 2em;
+	    margin-bottom: 2em;
+}
+.promotion-summary .show-text{
+	width: 68%;
+}
+.promotion-summary .show-text strong{
+	display: block;
+	margin-left: 5%;
+	font-size: 1.8em;
+    font-weight: normal;
+}
+.promotion-summary .show-text .compare-status{
+	display: block;
+	margin-left: 5%;
+	margin-top: 1em;
+	height: 22px;
+    line-height: 22px;
+}
+.promotion-summary .show-text .number-status{
+	margin-left: 5%;
+	height: 22px;
+	line-height: 22px;
+}
+.promotion-summary .show-text .number-status i{
+	margin-right: 2px;
+}
+.promotion-summary .show-text .number-status div{
+	font-size: 1.2em;
+	float: left;
+	margin-right: 10px;
+}
+.promotion-summary .show-text hr{
+	display: block;
+    height: 1px;
+    background: -webkit-linear-gradient(left,#5894ca,transparent);
+    background: -moz-linear-gradient(left,#5894ca,transparent);
+    background: -ms-linear-gradient(left,#5894ca,transparent);
+    border: 0;
+    margin-left: 0;
+    width: 80%;
+    margin-top: 2em;
+}
+.promotion-summary .qc-info{
+	width: 27%;
+	text-align: center;
+}
+.promotion-summary .qc-info img{
+	width: 100%;
+}
+.qc-info-text{
+	color: #b4cbed;
+}
+.chart-tabs{
+	display: box;
+	display: -webkit-box;
+	-webkit-box-pack:center;
+			box-pack:center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    
+    border-bottom: 1px solid #659ac2;
+    
+    
+}
+.chart-tabs div{
+	width: 55px;
+	text-align: center;
+	font-size: 1.4em;
+	margin:0 10px;
+	padding: 5px 0;
+	cursor: pointer;
+}
+.chart-tabs div.active{
+	border-bottom:2px solid #fff;
+}
+.bdshare-button-style0-16 {
+	width: 138px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-top: 20px;
+}
+.bdshare-button-style0-32 {
+	width: 138px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-top: 20px;
+}
+@media only screen and (min-width: 1024px){
+	.promotion{
+		padding: 5px 92px;
+	}
+	.promotion-container{
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		margin-top: 100px;
+		-webkit-justify-content:space-around;
+		    -ms-flex-pack:distribute;
+		        justify-content:space-around;
+		/* display: box;
+		display: -webkit-box;
+		box-orient:horizontal;
+		-webkit-box-orient:horizontal; */
+	}
+	.promotion-title{
+		font-size: 2.4em;
+		margin-top: 34px;
+	}
+	.promotion-chart{
+		margin:0;
+		width: 48%;
+	}
+	.promotion-summary{
+		width: 36%;
+		padding: 5.5em 0;
+	}
+	.bdshare-button-style0-16 {
+		margin-top: 40px;
+	}
+	.bdshare-button-style0-32 {
+		margin-top: 140px;
+		width: 228px;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 736px){
+	.promotion-title{
+		font-size: 3.4em;
+		line-height: 118px;
+	}
+	.promotion-summary .show-text strong{
+		font-size: 2.6em;
+	}
+	.promotion-summary .show-text .compare-status{
+		font-size: 1.6em;
+	}
+	.promotion-summary .show-text hr{
+		height: 2px;
+	}
+	.promotion-summary .show-text .number-status div{
+		font-size: 1.6em;
+	}
+	.promotion-summary .show-text .number-status{
+		margin-top: 4em;
+	}
+	.qc-info-text{
+		font-size: 1.6em;
+	}
+	.promotion-chart{
+		margin-top: 4em;
+		margin-bottom: 4em;
+	}
+	.promotion #content{
+		height: 400px;
+	}
+	.chart-tabs div{
+		width: 4em;
+		font-size: 1.8em;
+	}
+	.bdshare-button-style0-16{
+		
+	}
+	.bdshare-button-style0-32{
+		width: 228px;
+	}
+}
+/* @media (-webkit-min-device-pixel-ratio: 3){
+	.promotion-title{
+	font-size: 2em;
+}
+} */

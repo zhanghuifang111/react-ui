@@ -1,0 +1,18 @@
+.star{
+	position:relative;
+	float:left;
+
+}
+.star-icon{
+	display: inline-block;
+	width: 23px;
+	height: 21px;
+	background:url('../../../images/energy/star.png') 0 -31px no-repeat;
+	margin: 0 20px;
+}
+.star-icon.active{
+	position:absolute;
+	background-position:0 0;
+	top:0;
+	left:0;
+}

@@ -1,0 +1,58 @@
+.rkui{
+	padding:25px 50px;
+	h1{
+		font-size:24px;
+		margin-bottom: 30px;
+		font-weight: 700;
+	}
+	h4{
+		font-size: 14px;
+		margin-bottom: 20px;
+		margin-top: 30px;
+	}
+	h5{
+		margin:16px 0 16px 0;
+	}
+	code{
+		display: block;
+		min-width: 500px;
+		padding: 16px;
+		background-color: #eee;
+		margin-top: 20px;
+	}
+	pre{
+		display: block;
+		font-size: 16px;
+		line-height: 2;
+	}
+	.content{
+		padding-left: 20px;
+	}
+	.example{
+		padding-left: 20px;
+		border:1px solid #eee;
+		padding-bottom: 16px;
+		margin-bottom: 20px;
+		button{
+			margin-right: 10px;
+		}
+	}
+	.pagination{
+		float: none;
+	}
+	.icon-16{
+		i{
+			margin: 10px;
+			font-size:16px;
+		}
+	}
+	.icon-24{
+		i{
+			margin: 10px;
+			font-size:24px;
+		}
+	}
+}
+.drop-menu-item a{
+	padding-left: 50px;
+}
